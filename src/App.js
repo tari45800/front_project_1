@@ -1,10 +1,8 @@
-import './App.css';
+import Header from "./layout/HeaderPage";
 
 function App() {
   return (
-    <div className="App">
-      <span>test</span>
-    </div>
+    <Header></Header>
   );
 }
 
