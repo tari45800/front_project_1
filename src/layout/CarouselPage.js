@@ -10,7 +10,7 @@ const CarouselWindow = styled.div`
 `
 const ContentBoxConrainer = styled.div`
   border: 2ps solid gray;
-  width: 200vw;
+  width: 400vw;
   display: flex;
 `
 const ContentBox = styled.div`
@@ -41,6 +41,25 @@ function Carousel(){
 
       <CarouselWindow>
         <ContentBoxConrainer>
+
+          <ContentBox>
+            <MainComponent />
+            <Horizontal>
+              <MainComponent />
+              <MainComponent />
+            </Horizontal>
+          </ContentBox>
+
+          <ContentBox>
+            <MainComponent />
+            <Horizontal>
+              <MainComponent />
+              <Verticality>
+                <MainComponent />
+                <MainComponent />
+              </Verticality>
+            </Horizontal>
+          </ContentBox>
 
           <ContentBox>
             <MainComponent />
