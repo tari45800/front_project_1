@@ -20,6 +20,7 @@ const ContentBox = styled.div`
   display: flex;
   height: 660px;
   padding: 10px;
+  
 `
 
 const CarouselController = styled.div`
