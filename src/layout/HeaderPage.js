@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  position: absolute;
+  position: fixed;
   top: ${props => props.scroll ? `-10rem` : '0'};
   width: 100vw;
   border: 2px solid red;

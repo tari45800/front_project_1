@@ -22,7 +22,7 @@ function App() {
       const handleScroll = () => {
         const scroll = window.pageYOffset;
         
-        if(scroll >= 40){
+        if(scroll >= 100){
           console.log('여기여')
           setScroll(true)
         } else {
