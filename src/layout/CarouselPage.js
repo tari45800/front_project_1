@@ -10,7 +10,7 @@ const CarouselWindow = styled.div`
 `
 const CarousalSlideBax = styled.div`
   position: relative;
-  left: ${props => props.currentSlide * -100}vh;
+  left: ${props => props.currentSlide * -100}vw;
   /* left: -200vh; */
   border: 2ps solid gray;
   width: 400vw;
@@ -58,15 +58,14 @@ function Carousel(){
   const fakeMove = () => {
     if(currentSlide <= 0){
       setTransition(false)
-      setSlide(2)
-      return
+      setSlide((prevSlide) => prevSlide + 2)
+      console.log('왓다1'+currentSlide)
     }
 
     if(currentSlide >= 3){
       setTransition(false)
-      setSlide(1)
-      return
-
+      setSlide((prevSlide) => prevSlide - 2)
+      console.log('왓다2'+currentSlide)
     }
   }
   

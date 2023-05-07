@@ -7,6 +7,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   * {
     box-sizing: border-box;
+    user-select: none;
+
   }
 
   html, body, div, span, applet, object, iframe,
