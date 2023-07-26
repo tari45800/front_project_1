@@ -1,10 +1,10 @@
 import { GlobalStyles } from "./layout/GlobalStyles";
 import styled from "styled-components";
 import Header from "./layout/HeaderPage";
-import Carousel from "./layout/CarouselPage";
 import TagBox from "./components/Molecules/TagBox";
 import TagForm from "./components/Organisms/TagForm";
 import { useState, useEffect } from "react";
+import Carousel from "./components/Organisms/Carousel";
 
 
 const Main = styled.div`
@@ -42,7 +42,11 @@ function App() {
   //   }, []);
 
 
-
+const MainCC = styled.div`
+  width: 2rem;
+  height: 2rem;
+  background-color: pink;
+`
   return (
     <Main>
       <GlobalStyles></GlobalStyles>
@@ -50,7 +54,7 @@ function App() {
         <Header scroll={isScroll}></Header> 
       </div>
       <Carousel></Carousel> */}
-      <TagForm></TagForm>
+      <Carousel contentList={[<MainCC />, 2, 3, 4, 5, 6, 7, 8]} contentNumber={1} contentwidth={100} contentheight={30} contentDot={true}></Carousel>
     </Main>
   );
 }
