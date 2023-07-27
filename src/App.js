@@ -8,38 +8,38 @@ import Carousel from "./components/Organisms/Carousel";
 
 
 const Main = styled.div`
-  /* background-color: var(--bg-color);
+  background-color: var(--bg-color);
   height: 200vh;
   .header{
     height: 10rem;
-  } */
+  }
 `
 
 function App() {
 
-  // const [isScroll, setScroll] = useState(false)
+  const [isScroll, setScroll] = useState(false)
 
-  //   useEffect(() => {
+    useEffect(() => {
 
-  //     const handleScroll = () => {
-  //       const scroll = window.pageYOffset;
+      const handleScroll = () => {
+        const scroll = window.pageYOffset;
         
-  //       if(scroll >= 100){
-  //         console.log('여기여')
-  //         setScroll(true)
-  //       } else {
-  //         console.log('저기여')
-  //         setScroll(false)
-  //       }
+        if(scroll >= 100){
+          console.log('여기여')
+          setScroll(true)
+        } else {
+          console.log('저기여')
+          setScroll(false)
+        }
     
-  //     }
+      }
     
-  //     window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
   
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, []);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
 
 const MainCC = styled.div`
@@ -50,11 +50,12 @@ const MainCC = styled.div`
   return (
     <Main>
       <GlobalStyles></GlobalStyles>
-      {/* <div className="header">
+      <div className="header">
         <Header scroll={isScroll}></Header> 
       </div>
-      <Carousel></Carousel> */}
-      <Carousel contentList={[<MainCC />, 2, 3, 4, 5, 6, 7, 8]} contentNumber={1} contentwidth={100} contentheight={30} contentDot={true}></Carousel>
+      {/*
+      <Carousel></Carousel>
+      <Carousel contentList={[<MainCC />, 2, 3, 4, 5, 6, 7, 8]} contentNumber={1} contentwidth={100} contentheight={30} contentDot={true}></Carousel> */}
     </Main>
   );
 }
